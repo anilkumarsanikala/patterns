@@ -1,0 +1,102 @@
+<html>
+    <head><title>forms</title></head>
+    <body>
+        <form action="./reg.html"> 
+            <pre>
+            <fieldset>
+            <legend>Register here</legend>
+            <h2>I want to join in 10kcoders &#128682; and i want to become a Developer &#128187;</h2>
+            <center>
+            <div style="background-color: khaki;">
+            <label for="Name">Name:--</label>
+            <input type="text" placeholder="FullName" id="Name" required pattern="[a-zA-Z0-9]{4,9}"/>
+            </div>
+            <div style="background-color: lightsalmon;">
+            <label for="pswd">Enter password:--</label>
+            <input type="password" placeholder="password" id="pswd" required pattern="[a-zA-Z0-9@&$#]{4,7}"/>
+            </div>
+            <div style="background-color: aquamarine;">
+            <label for="Email">Email:--</label>
+            <input type="email" placeholder="Email" id="Email" required pattern="[a-zA-Z0-9]+@[a-z]+\.[a-z]{,}"/>
+            </div>
+
+            <div style="background-color: lightgreen;">
+            <label for="select">Eduaction:--</label>
+            <select id="select" style="width: 170px;" required>
+                <option value="">choose from below</option>
+                <option value="1">MCA</option>
+                <option value="2">BSc</option>
+                <option value="3">BTech</option>
+                <option value="4">MBA</option>
+            </select>
+            </div>
+
+            <div style="background-color: yellow;">
+            <label for="year">Year of passed out:--</label>
+            <select id="year" style="width: 170px;" required>
+                <option value="">Choose from here</option>
+                <option value="1">2024</option>
+                <option value="2">2023</option>
+                <option value="3">2022</option>
+                <option value="4" disabled>2021</option>
+            </select>
+            </div>
+
+            <div style="background-color: lightpink;">
+            <label for="loc">Location:--</label>
+            <input type="text" list="id" required/>
+            <datalist id="id">
+            <option value="hyd">hyd</option>
+            <option value="knl">knl</option>
+            <option value="ndl">ndl</option>
+            <option value="kdp" disabled>kdp</option>
+            </datalist>
+            </div>
+            
+            <div style="background-color: cadetblue;">
+            <label for="course">Choose your course</label>
+            <select id="course" style="width: 170;" required>
+                <option value="">Choose from below</option>
+                <option value="1">Frontend Developer</option>
+                <option value="2">Backend Developer</option>
+                <option value="3">React Developer</option>
+                <option value="4" disabled>DevOps Developer</option>
+            </select>
+            </div>
+
+            <div style="background-color: lightskyblue;">
+            <label for="num">PhNum</label>
+            <input type="tel" id="num" required>
+            </div>
+            
+            <div style="background-color: aquamarine;">
+            <label for="files"></label>
+            <input type="file" id="files" multiple>
+            </div>
+            <div style="background-color: plum;">
+            <label for="radio">Male</label>
+            <input type="radio" id="radio" required>
+
+            <label for="radio">Female</label>
+            <input type="radio" id="radio" required>
+            </div>
+
+            <div style="background-color: chartreuse;;">
+            <label for="check"></label>
+            <input type="checkbox" id="check" required>i agree to <a href="">terms</a> and <a href="">conditions</a>
+            </div>
+
+            <textarea rows="4" cols="55"> </textarea>  
+
+            <input type="submit">
+
+            </center>
+            </pre>
+            </fieldset>
+
+        </form>
+    </body>
+
+
+
+</html>
